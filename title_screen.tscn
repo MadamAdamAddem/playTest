@@ -1,0 +1,99 @@
+[gd_scene load_steps=16 format=3 uid="uid://cgmc01wr7f3bs"]
+
+[ext_resource type="Texture2D" uid="uid://cqvn7miwjwgmm" path="res://titleScren.png" id="1_ig5kc"]
+[ext_resource type="Script" uid="uid://4aydcrllnygr" path="res://title_screen.gd" id="2_05l2w"]
+[ext_resource type="FontFile" uid="uid://di60lbmo8bljp" path="res://munro.ttf" id="3_hafda"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_lquwl"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_7mycd"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_272bh"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_5vw27"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_kek77"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_4c57u"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_efxa6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0, 0, 0, 1)
+corner_detail = 1
+
+[sub_resource type="Theme" id="Theme_1bvp3"]
+default_font = ExtResource("3_hafda")
+OptionButton/constants/arrow_margin = 0
+OptionButton/constants/h_separation = 0
+OptionButton/font_sizes/font_size = 10
+PopupMenu/font_sizes/font_size = 10
+PopupMenu/icons/checked = SubResource("ImageTexture_lquwl")
+PopupMenu/icons/checked_disabled = SubResource("ImageTexture_7mycd")
+PopupMenu/icons/radio_checked = SubResource("ImageTexture_272bh")
+PopupMenu/icons/radio_checked_disabled = SubResource("ImageTexture_5vw27")
+PopupMenu/icons/radio_unchecked = SubResource("ImageTexture_kek77")
+PopupMenu/icons/radio_unchecked_disabled = SubResource("ImageTexture_4c57u")
+PopupMenu/icons/unchecked = SubResource("ImageTexture_efxa6")
+PopupMenu/styles/hover = null
+PopupMenu/styles/labeled_separator_left = null
+PopupMenu/styles/labeled_separator_right = null
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_1bvp3")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lquwl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1bvp3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7mycd"]
+
+[node name="TitleScreen" type="Node2D"]
+process_mode = 1
+script = ExtResource("2_05l2w")
+
+[node name="BG" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(160, 90)
+texture = ExtResource("1_ig5kc")
+
+[node name="PlayButton" type="Button" parent="."]
+texture_filter = 1
+offset_left = 117.0
+offset_top = 70.0
+offset_right = 192.0
+offset_bottom = 102.0
+theme = SubResource("Theme_1bvp3")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lquwl")
+text = "Play"
+flat = true
+
+[node name="QuitButton" type="Button" parent="."]
+texture_filter = 1
+offset_left = 117.0
+offset_top = 142.0
+offset_right = 192.0
+offset_bottom = 174.0
+theme = SubResource("Theme_1bvp3")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1bvp3")
+text = "Quit
+"
+flat = true
+
+[node name="SettingsButton" type="Button" parent="."]
+process_mode = 1
+texture_filter = 1
+offset_left = 118.0
+offset_top = 106.0
+offset_right = 193.0
+offset_bottom = 138.0
+theme = SubResource("Theme_1bvp3")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7mycd")
+text = "Settings
+"
+flat = true
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
