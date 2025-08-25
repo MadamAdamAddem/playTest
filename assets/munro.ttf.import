@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://di60lbmo8bljp"
-path="res://.godot/imported/munro.ttf-30a64a7e8c1b6ece6de0c75e0185460e.fontdata"
+path="res://.godot/imported/munro.ttf-bb365ff2dbca79cf3f7524b44aa0eb80.fontdata"
 
 [deps]
 
-source_file="res://munro.ttf"
-dest_files=["res://.godot/imported/munro.ttf-30a64a7e8c1b6ece6de0c75e0185460e.fontdata"]
+source_file="res://assets/munro.ttf"
+dest_files=["res://.godot/imported/munro.ttf-bb365ff2dbca79cf3f7524b44aa0eb80.fontdata"]
 
 [params]
 

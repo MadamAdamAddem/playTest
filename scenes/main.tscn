@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b6bcf8fwlomh8"]
+
+[ext_resource type="Script" uid="uid://ccvc57d0d28or" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dm6txy6gh68ay" path="res://scenes/settings_menu.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://cgmc01wr7f3bs" path="res://scenes/title_screen.tscn" id="3_tbgi4"]
+
+[node name="Main" type="Node2D"]
+visible = false
+texture_filter = 1
+script = ExtResource("1_sugp2")
+
+[node name="SettingsMenu" parent="." instance=ExtResource("2_jyhfs")]
+process_mode = 2
+
+[node name="TitleScreen" parent="." instance=ExtResource("3_tbgi4")]

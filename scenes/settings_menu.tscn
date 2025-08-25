@@ -1,8 +1,8 @@
 [gd_scene load_steps=16 format=3 uid="uid://dm6txy6gh68ay"]
 
-[ext_resource type="Script" uid="uid://0ol8mjt4tfgd" path="res://settings_menu.gd" id="1_d0eu6"]
-[ext_resource type="Texture2D" uid="uid://cqvn7miwjwgmm" path="res://titleScren.png" id="1_mlw3h"]
-[ext_resource type="FontFile" uid="uid://di60lbmo8bljp" path="res://munro.ttf" id="3_fiqec"]
+[ext_resource type="Script" uid="uid://0ol8mjt4tfgd" path="res://scripts/settings_menu.gd" id="1_d0eu6"]
+[ext_resource type="Texture2D" uid="uid://cqvn7miwjwgmm" path="res://assets/titleScren.png" id="1_mlw3h"]
+[ext_resource type="FontFile" uid="uid://di60lbmo8bljp" path="res://assets/munro.ttf" id="3_fiqec"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_lquwl"]
 
