@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://cgmc01wr7f3bs" path="res://scenes/title_screen.tscn" id="3_tbgi4"]
 
 [node name="Main" type="Node2D"]
-visible = false
 texture_filter = 1
 script = ExtResource("1_sugp2")
 
